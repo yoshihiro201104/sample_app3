@@ -1,0 +1,13 @@
+<h1>新規投稿</h1>
+
+<%= form_with model: @list, url: '/lists', method: :post do |orz| %>
+  <h4>タイトル</h4>
+  <%= orz.text_field :title %>
+
+  <h4>本文</h4>
+  <%= orz.text_area :body %>
+
+  <%= orz.submit '投稿'%>
+
+  <%= @hello %>
+<% end %>
